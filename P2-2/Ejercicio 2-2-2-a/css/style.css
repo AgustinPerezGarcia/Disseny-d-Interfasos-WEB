@@ -24,9 +24,10 @@ body{
 
 header{
     background-color: var(--color-fondo-cabezera);
-    height: 70px;    
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
 }
-
 
 main{
     background-color: var(--color-fondo-main);
@@ -38,6 +39,8 @@ nav{
     width: 150px;
     height: 200px;
     float: left;
+    text-align: center;
+    line-height: 200px;
 }
 
 #info{
@@ -45,17 +48,23 @@ nav{
     width: 680px;
     height: 500px;
     float: left;
+    text-align: center;
+    line-height: 500px;
 }
 
 #barra{
     background-color: var(--color-fondo-barra);
     width: 150px;
     height: 500px;
-    float: left;    
+    float: left;
+    text-align: center;
+    line-height: 500px;
 }
 
 footer{
     background-color: var(--color-fondo-footer);
     height: 25px;
-    clear: both;    
+    clear: both;
+    text-align: center;
+    line-height: 25px;
 }

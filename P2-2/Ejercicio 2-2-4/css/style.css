@@ -19,18 +19,25 @@ p{
     color: var(--color-texto-blanco);
 }
 
+body{
+    width: 100%;
+}
+
 header > p{
-    font-size: 37px;
+    font-size: 2.4em;
+    line-height: 5vh;
 }
 
 nav > p{
-    font-size: 40px;
+    font-size: 2.6em;
 }
 
 header{
     background-color: var(--color-fondo-cabezera);
     text-align: center;
-    padding: 2vh;
+    height: 5vh;
+    margin: 0 auto;
+
 }
 
 .head{
@@ -40,7 +47,7 @@ header{
 nav{
     background-color: var(--color-fondo-nav);
     width: 20%;
-    height: 60vh;
+    height: 93vh;
     text-align: center;
     float: left;
 }
@@ -57,7 +64,7 @@ nav{
 main{
     background-color: var(--color-fondo-main);
     width: 80%;
-    height: 60vh;
+    height: 93vh;
     text-align: center;
     float: left;
 }
@@ -120,7 +127,12 @@ main{
 
 footer{
     background-color: var(--color-fondo-footer);
-    padding: 0.5vh;
+    height: 2vh;
     text-align: center;
     clear: both;
+}
+
+footer > p{
+    font-size: 1em;
+    line-height: 2vh;
 }

@@ -22,39 +22,49 @@ body{
     margin: auto;
 }
 
-
-
 header{
     background-color: var(--color-fondo-cabezera);
-    height: 70px;    
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
 }
 
 nav{
     background-color: var(--color-fondo-nav);
-    height: 25px;   
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
 }
 
 main{
     background-color: var(--color-fondo-main);
     height: 500px;
+    font-size: 0;
 }
 
 #info{
     background-color: var(--color-fondo-informacion);
     width: 770px;
     height: 500px;
-    display: inline-block;    
+    display: inline-block;
+    text-align: center;
+    line-height: 500px;
+    font-size: 16px;
 }
 
 #barra{
     background-color: var(--color-fondo-barra);
-    width: 200px;
+    width: 210px;
     height: 500px;
-    margin: 0 0 0 6px;
-    display: inline-block;    
+    display: inline-block;
+    text-align: center;
+    line-height: 500px;
+    font-size: 16px;
 }
 
 footer{
     background-color: var(--color-fondo-footer);
     height: 25px;
+    text-align: center;
+    line-height: 25px;
 }

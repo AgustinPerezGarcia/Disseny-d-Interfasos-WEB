@@ -22,16 +22,18 @@ body{
     margin: auto;
 }
 
-
-
 header{
     background-color: var(--color-fondo-cabezera);
-    height: 70px;    
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
 }
 
 nav{
     background-color: var(--color-fondo-nav);
-    height: 25px;   
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
 }
 
 main{
@@ -41,21 +43,26 @@ main{
 
 #info{
     background-color: var(--color-fondo-informacion);
-    width: 770px;
+    width: 780px;
     height: 500px;
-    float: left;    
+    float: left;
+    text-align: center;
+    line-height: 500px;
 }
 
 #barra{
     background-color: var(--color-fondo-barra);
     width: 200px;
     height: 500px;
-    margin: 0 0 0 10px;
-    float: left;    
+    float: left;
+    text-align: center;
+    line-height: 500px;
 }
 
 footer{
     background-color: var(--color-fondo-footer);
     height: 25px;
-    clear: both;    
+    clear: both;
+    text-align: center;
+    line-height: 25px;
 }
