@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 2px solid black;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/* ──────────────────────────
+   HEADER (FLOAT)
+────────────────────────── */
+.header {
+    width: 100%;
+    height: 9vh;
+    padding-top: 1.5vh;
+}
+
+.logo {
+    float: left;
+    width: 10%;
+    height: 5vh;
+    text-align: center;
+    line-height: 4vh;
+}
+
+/* Menú a la derecha */
+.menu {
+    float: right;
+    margin-right: 10%;
+}
+
+/* Los dos grupos del menú */
+.menu>div {
+    float: left;
+    height: 5vh;
+    padding-top: 1vh;
+    padding-right: 1vw;
+}
+
+/* Botones menú */
+.navi {
+    display: inline-block;
+    width: 4.3vw;
+    height: 3vh;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+.navd {
+    display: inline-block;
+    width: 5.7vw;
+    height: 3vh;
+    margin-left: 1vw;
+    text-align: center;
+}
+
+
+
+/* ──────────────────────────
+   LINEA 1
+────────────────────────── */
+
+#linea1 {
+    width: 100%;
+    height: 60vh;
+}
+
+#bloque1,
+#bloque2 {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#bloque1 {
+    padding: 2%;
+}
+
+#elemento1,
+#elemento2,
+#elemento3,
+#elemento4,
+#elemento5 {
+    display: block;
+    margin-bottom: 1vh;
+}
+
+#elemento1 {
+    width: 50%;
+    height: 2vh;
+}
+
+#elemento2,
+#elemento3 {
+    width: 90%;
+    height: 4vh;
+}
+
+#elemento4 {
+    width: 30%;
+    height: 4vh;
+}
+
+#elemento5_1,
+#elemento5_2 {
+    width: 30%;
+    height: 4vh;
+    float: left;
+}
+
+/* ──────────────────────────
+   LINEA 2
+────────────────────────── */
+
+#linea2 {
+    width: 100%;
+    height: 60vh;
+}
+
+#bloque3 {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+#bloque4 {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+#bloque4 {
+    padding: 4%;
+}
+
+#elemento6 {
+    width: 46%;
+    height: 15vh;
+    margin: 5vh auto 2vh 10%;
+}
+
+#elemento7,
+#elemento8,
+#elemento9 {
+    display: block;
+    width: 80%;
+    height: 5vh;
+    margin: 3vh auto;
+}
+
+/* ──────────────────────────
+   LINEA 3
+────────────────────────── */
+
+#linea3 {
+    width: 100%;
+    height: 40vh;
+}
+
+#bloque5,
+#bloque6 {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#bloque5 {
+    padding: 6%;
+}
+
+#elemento10 {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+#elemento11 {
+    width: 80%;
+    height: 4vh;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+#elemento12 {
+    width: 30%;
+    height: 4vh;
+    margin-left: 10%;
+}
+
+/* ──────────────────────────
+   LINEA 4
+────────────────────────── */
+
+#linea4 {
+    width: 100%;
+    height: 70vh;
+    padding: 0 0 2% 2%;
+}
+
+#elemento13 {
+    width: 40%;
+    height: 3vh;
+    margin-bottom: 1vh;
+}
+#elemento14 {
+    width: 30%;
+    height: 1.5vh;
+    margin-bottom: 1vh;
+}
+#caja1,
+#caja2,
+#caja3 {
+    float: left;
+    width: 31.32%;
+    height: 60vh;
+    margin-right: 2%;
+}
+
+/* Parte de arriba y parte de abajo internas */
+#sep1,
+#sep3,
+#sep5 {
+    height: 45vh;
+}
+
+#sep2,
+#sep4,
+#sep6 {
+    height: 15vh;
+    padding-top: 0.5vh;
+}
+
+.l1 {
+    width: 95%;
+    height: 1.5vh;
+    margin: 1vh;
+}
+
+.l2 {
+    width: 95%;
+    height: 2.5vh;
+    margin: 1vh;
+}
+
+.l3 {
+    width: 25%;
+    height: 1.5vh;
+    margin: 1vh;
+}
+
+
+
+/* ──────────────────────────
+   LINEA 5
+────────────────────────── */
+
+#linea5 {
+    width: 100%;
+    height: 30vh;
+    padding: 5vh;
+}
+
+#caja4 {
+    width: 80%;
+    height: 20vh;
+    margin: 0 auto;
+    padding-top: 2vh;
+}
+
+#subcaja1 {
+    width: 50%;
+    height: 15vh;
+    margin: auto;
+    padding-top: 0.5vh;
+}
+
+#elemento24{
+    width: 90%;
+    height: 4vh;    
+    margin: auto;
+    margin-top: 1vh;
+}
+#elemento25{
+    width: 90%;
+    height: 2vh;
+    margin: auto;
+    margin-top: 1vh;
+}
+#elemento26{
+    width: 90%;
+    height: 4vh;
+    margin: auto;
+    margin-top: 1vh;
+}
+
+/* ──────────────────────────
+   LINEA 6
+────────────────────────── */
+
+#linea6 {
+    width: 100%;
+    height: 30vh;
+    padding: 2%;
+}
+
+#precaja1{
+    margin: auto;
+}
+
+#caja5, #caja6, #caja7 {
+    float: left;
+    width: 20%;
+    height: 23vh;
+}
+
+#caja8 {
+    float: left;
+    width: 40%;
+    height: 23vh;
+}
+
+.th, .td{
+    width: 94%;
+    height: 4.5vh;
+    margin: 3%;
+}
+
+.thf, .tdf{
+    width: 97.02%;
+    height: 4.5vh;
+    margin: 1.49%;
+}
+
+/* ──────────────────────────
+   LINEA 7
+────────────────────────── */
+
+#linea7 {
+    width: 100%;
+    height: 15vh;
+    padding: 2vh 0 0 2vh;
+}
+
+#elemento42 {
+    float: left;
+    width: 98%;
+    height: 2vh;
+    margin-right: 3%;
+}
+
+#caja9 {
+    float: left;
+    width: 98%;
+    height: 9vh;
+    margin-top: 2vh;
+}
+
+#elemento43 {
+    float: left;
+    width: 20%;
+    height: 4vh;
+    margin: 2.5vh 0 1vh 1vh;
+}
+
+#elemento44 {
+    float: right;
+    width: 20%;
+    height: 4vh;
+    margin: 2.5vh 1vh 1vh 0;
+}
