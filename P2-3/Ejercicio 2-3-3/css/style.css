@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat-Bold:wght@400;700&display=swap');
+
+:root{
+    --principal: #6a1ee9;
+    --secundario: #f4f4f4;
+    --tercero: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
-    outline: 2px solid black;
     box-sizing: border-box;
+    font-family: 'Montserrat';
+    outline: 2px  black;
+    font-weight: 800;
 }
 
 body {
@@ -11,38 +21,58 @@ body {
     margin-bottom: 5px;
 }
 
+.punto{
+    color: var(--principal);
+}
+
 /* ──────────────────────────
    HEADER (FLOAT)
 ────────────────────────── */
 .header {
     width: 100%;
     height: 9vh;
-    padding-top: 1.5vh;
 }
 
 .logo {
     float: left;
-    width: 10%;
+    width: 20%;
     height: 5vh;
     text-align: center;
     line-height: 4vh;
 }
 
+#hizq {
+    float: left;
+    width: 50%;
+    height: 9vh;
+    padding-top: 1.5vh;
+
+}
+
+#hder {
+    float: left;
+    width: 50%;
+    height: 9vh;
+    padding-top: 1.5vh;
+    background-color: var(--secundario);
+}
+
+
 .menu {
     float: right;
-    width: 40%;
+    width: 90%;
     margin-right: 10%;
 }
 
 #izq {
     float: left;
-    width: 50%;
+    width: 40%;
     height: 5vh;
 }
 
 #der {
     float: left;
-    width: 50%;
+    width: 60%;
     height: 5vh;
 }
 
@@ -64,6 +94,17 @@ body {
     text-align: center;
 }
 
+#navd1{
+    background-color: var(--tercero);
+    border-radius: 5px;
+}
+
+#navd2{
+    background-color: var(--principal);
+    border-radius: 5px;
+    color: var(--tercero);
+}
+
 
 
 /* ──────────────────────────
@@ -72,7 +113,7 @@ body {
 
 #linea1 {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
 }
 
 #bloque1,
@@ -84,6 +125,10 @@ body {
 
 #bloque1 {
     padding: 2%;
+}
+
+#bloque2{
+    background-color: var(--secundario);
 }
 
 #elemento1,
@@ -104,16 +149,19 @@ body {
 #elemento3 {
     width: 90%;
     height: 4vh;
+    margin-top: 3vh;
 }
 
 #elemento4 {
     width: 30%;
     height: 4vh;
+    background-color: var(--principal);
+    color: var(--tercero);
+    border-radius: 10px;
 }
 
-#elemento5_1,
-#elemento5_2 {
-    width: 30%;
+#elemento5_1 {
+    width: 50%;
     height: 4vh;
     float: left;
 }
@@ -164,7 +212,10 @@ body {
 
 #linea3 {
     width: 100%;
-    height: 40vh;
+    height: 70vh;
+    background-color: var(--secundario);
+    border-radius: 40px;
+    padding-top: 4vh;
 }
 
 #bloque5,
@@ -196,6 +247,9 @@ body {
     width: 30%;
     height: 4vh;
     margin-left: 10%;
+    background-color: var(--principal);
+    border-radius: 10px;
+    color: var(--tercero);
 }
 
 /* ──────────────────────────
@@ -257,6 +311,7 @@ body {
     width: 25%;
     height: 1.5vh;
     margin: 1vh;
+    color: var(--principal);
 }
 
 
@@ -269,6 +324,9 @@ body {
     width: 100%;
     height: 30vh;
     padding: 5vh;
+    background-color: var(--principal);
+    border-radius: 60px;
+    color: var(--tercero);
 }
 
 #caja4 {
@@ -290,6 +348,7 @@ body {
     height: 4vh;    
     margin: auto;
     margin-top: 1vh;
+    font-size: 200%;
 }
 #elemento25{
     width: 90%;
@@ -355,8 +414,10 @@ body {
 #elemento42 {
     float: left;
     width: 98%;
-    height: 2vh;
+    height: 5px;
     margin-right: 3%;
+    background-color: var(--secundario);
+    border-radius: 100px;
 }
 
 #caja9 {
