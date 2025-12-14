@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 32px;
+}
+
+body {
+    margin: 2vh 2% 0 2%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 3vh;
+}
+
+h2 {
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 1vh;
+    border-bottom: 5px solid gray;
+}
+
+#todo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.bloque {
+    margin-bottom: 2vh;
+}
+
+ul li {
+    display: flex;
+    font-size: .8rem;
+    margin-top: 1vh;
+    flex-direction: column;
+}
+
+.azul {
+    color: blue;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 24px;
+    }
+
+    body {
+        margin-left: 2%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 4vh;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5vh;
+        border: none;
+    }
+
+    #todo {
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        flex-direction: row;
+    }
+
+    #izquierda {
+        width: 30%;
+    }
+
+    #derecha {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+    }
+
+    #derecha ul {
+        list-style-type: disc;
+    }
+
+    #derecha ul li {
+        display: list-item;
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    .azul {
+        margin-right: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        margin-left: 2%;
+    }
+
+    h1 {
+        margin-bottom: 4vh;
+    }
+
+    h2 {
+        margin-bottom: 0.5vh;
+    }
+
+    #todo {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #izquierda,
+    #derecha {
+        display: contents;
+    }
+
+    .bloque {
+        width: 33%;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul li {
+        display: list-item;
+        margin-left: 10%;
+    }
+}

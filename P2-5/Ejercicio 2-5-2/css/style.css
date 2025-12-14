@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-family: serif;
+}
+
+h1 {
+    margin: 2vh 0;
+}
+
+h2 {
+    margin-bottom: 1vh;
+}
+
+#contenedor section {
+    margin-bottom: 3vh;
+}
+
+#datos ul {
+    list-style: none;
+}
+
+#datos ul li {
+    display: inline;
+}
+
+#datos ul li::after {
+    content: "; ";
+}
+
+#datos ul li:last-child::after {
+    content: "";
+}
+
+#descripcion p {
+    margin-bottom: 1.5vh;
+}
+
+#contenido p {
+    margin-bottom: 1.5vh;
+}
+
+#contenido ul {
+    padding-left: 5%;
+}
+
+#contenido ul li {
+    margin-bottom: 1.5vh;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    #contenedor {
+        display: flex;
+        gap: 4%;
+        align-items: flex-start;
+    }
+
+    #datos {
+        width: 30%;
+    }
+
+    #derecha {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #datos ul li::after {
+        content: "";
+    }
+
+    #datos ul {
+        list-style: disc;
+        padding-left: 5%;
+    }
+
+    #datos ul li {
+        display: list-item;
+    }
+
+    #contenido ul {
+        list-style: none;
+        display: flex;
+        gap: 3%;
+        padding-left: 2%;
+    }
+
+    #contenido ul li {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    #contenedor {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #derecha {
+        display: contents;
+    }
+
+    #datos,
+    #descripcion,
+    #contenido {
+        width: 30%;
+    }
+
+    #contenido ul {
+        display: block;
+        list-style: disc;
+        padding-left: 5%;
+    }
+
+    #contenido ul li {
+        width: auto;
+        margin-bottom: 1.5vh;
+    }
+}
+
