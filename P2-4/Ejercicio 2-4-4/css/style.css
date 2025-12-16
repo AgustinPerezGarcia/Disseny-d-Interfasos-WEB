@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat-Bold:wght@400;700&display=swap');
-
-:root{
+:root {
     --principal: #6a1ee9;
     --secundario: #f4f4f4;
     --tercero: #fff;
@@ -11,7 +9,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    outline: 2px  black;
     font-weight: 800;
 }
 
@@ -21,7 +18,7 @@ body {
     margin-bottom: 5px;
 }
 
-.punto{
+.punto {
     color: var(--principal);
 }
 
@@ -29,83 +26,79 @@ body {
    HEADER (FLOAT)
 ────────────────────────── */
 .header {
+    display: flex;
     width: 100%;
     height: 9vh;
 }
 
 .logo {
-    float: left;
+    display: flex;
     width: 30%;
     height: 5vh;
-    text-align: center;
-    line-height: 4vh;
+    justify-content: start;
+    align-items: center;
 }
 
 #hizq {
-    float: left;
+    display: flex;
     width: 40%;
     height: 9vh;
-    padding-top: 1.5vh;
-
+    align-items: center;
 }
 
 #hder {
-    float: left;
+    display: flex;
     width: 60%;
     height: 9vh;
-    padding-top: 1.5vh;
     background-color: var(--secundario);
+    align-items: center;
 }
 
 
 .menu {
-    float: right;
+    display: flex;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #izq {
-    float: left;
+    display: flex;
     width: 50%;
     height: 5vh;
+    align-items: center;
 }
 
 #der {
-    float: left;
+    display: flex;
     width: 50%;
     height: 5vh;
+    align-items: center;
 }
 
 .navi {
-    display: inline-block;
-    width: 25%;
-    height: 3vh;
-    margin-left: 5%;
-    margin-top: 1vh;
-    text-align: center;
-    padding-top: .6vh;
+    margin-left: 12%;
 }
 
 .navd {
-    display: inline-block;
+    display: flex;
     width: 35%;
     height: 3vh;
     margin-left: 7%;
-    margin-top: 1vh;
-    text-align: center;
-    padding-top: .6vh;
+    justify-content: center;
+    align-items: center;
 }
 
-#navd1{
+#navd1 {
     background-color: var(--tercero);
     border-radius: 5px;
 }
 
-#navd2{
+#navd2 {
     background-color: var(--principal);
     border-radius: 5px;
     color: var(--tercero);
 }
-
 
 
 /* ──────────────────────────
@@ -113,86 +106,87 @@ body {
 ────────────────────────── */
 
 #linea1 {
+    display: flex;
     width: 100%;
     height: 80vh;
 }
 
-#bloque1{
-    float: left;
+/* Columnas */
+#bloque1 {
+    display: flex;
+    flex-direction: column;
     width: 40%;
     height: 100%;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 #bloque2 {
-    float: left;
+    display: flex;
     width: 60%;
     height: 100%;
-}
-
-#bloque1 {
-    padding: 2%;
-}
-
-#bloque2{
     background-color: var(--secundario);
+    justify-content: center;
+    align-items: center;
 }
 
+/* Elementos internos */
 #elemento1,
 #elemento2,
 #elemento3,
 #elemento4,
 #elemento5 {
-    display: block;
     margin-bottom: 1vh;
+    /* CONTROLA SEPARACIÓN entre elementos */
 }
 
+/* Elemento que contiene div + texto */
 #elemento1 {
+    display: flex;
     width: 100%;
-    height: 2vh;
-    padding-top: .4vh;
     color: var(--principal);
+    align-items: center;
 }
 
-#elemento2{
+/* Caja “Nuevo” */
+#nuevo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 2.2vh;
+    margin-right: 1vh;
+    background-color: var(--principal);
+    color: var(--tercero);
+    border-radius: 5px;
+}
+
+/* NO flex → contienen spans */
+#elemento2 {
     width: 90%;
-    height: 15vh;
-    margin-top: 2vh;
     font-size: 4rem;
 }
 
 #elemento3 {
     width: 90%;
-    height: 7vh;
     font-size: 1.52rem;
 }
 
+/* Botón */
 #elemento4 {
+    display: flex;
     width: 40%;
     height: 4vh;
+    justify-content: center;
+    align-items: center;
     background-color: var(--principal);
     color: var(--tercero);
     border-radius: 10px;
-    margin-top: 3vh;
-    padding-top: 1vh;
-    text-align: center;
 }
 
+/* Imagen */
 #elemento5_1 {
     width: 50%;
-    height: 4vh;
-    float: left;
-    margin-top: 2vh;
-}
-
-#nuevo{
-    width: 15%;
-    height: 2vh;
-    float: left;
-    text-align: center;
-    margin-right: 5%;
-    border-radius: 5px;
-    background-color: var(--principal);
-    color: var(--tercero);
 }
 
 /* ──────────────────────────
@@ -200,42 +194,44 @@ body {
 ────────────────────────── */
 
 #linea2 {
+    display: flex;
     width: 100%;
     height: 60vh;
     margin-top: 20vh;
 }
 
 #bloque3 {
-    float: left;
     width: 40%;
     height: 50vh;
 }
 
 #bloque4 {
-    float: left;
+    display: flex;
     width: 60%;
     height: 100%;
-}
-
-#bloque4 {
     padding-left: 10%;
+    flex-direction: column;
 }
 
-#bloque4 > img{
-    float: left;
+#bloque41 {
+    display: flex;
+}
+
+#subbloque41 {
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
 }
 
 #elemento6 {
-    float: left;
     width: 100%;
     height: 15vh;
     margin: 0 0 2vh 0;
     font-size: 5rem;
 }
 
-#elemento7{
-    float: right;
-    width: 80%;
+#elemento7 {
+    width: 100%;
     height: 3vh;
     margin-top: 1.2vh;
     font-size: 2rem;
@@ -243,79 +239,88 @@ body {
 
 #elemento8,
 #elemento9 {
-    float: right;
-    width: 80%;
+    width: 100%;
     height: 3vh;
     margin-top: 12.5vh;
     font-size: 2rem;
 }
 
-.ndecide{
-    float: left;
+.ndecide {
+    display: flex;
+    width: 100%;
     margin-top: 2vh;
     font-size: 1.5rem;
 }
+
 /* ──────────────────────────
    LINEA 3
 ────────────────────────── */
 
 #linea3 {
+    display: flex;
     width: 100%;
     height: 50vh;
     background-color: var(--secundario);
     border-radius: 40px;
     margin-top: 20vh;
-    padding-top: 4vh;
-}
-
-#bloque5,
-#bloque6 {
-    float: left;
-    width: 50%;
-    height: 100%;
 }
 
 #bloque5 {
-    padding: 5%;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#subbloque5 {
+    display: flex;
+    margin-left: 20%;
+    flex-direction: column;
 }
 
 #elemento10 {
     width: 80%;
-    height: 10vh;
-    margin: auto;
-    margin-bottom: 3vh;
     font-size: 3rem;
+    margin-bottom: 3vh;
 }
 
 #elemento11 {
     width: 80%;
-    height: 10vh;
-    margin: auto;
-    margin-bottom: 3vh;
     font-size: 1.5rem;
+    margin-bottom: 3vh;
 }
 
 #elemento12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 4vh;
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 2vh;
-    padding-top: 1.2vh;
     background-color: var(--principal);
-    border-radius: 10px;
     color: var(--tercero);
+    border-radius: 10px;
 }
+
+#bloque6 {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ──────────────────────────
    LINEA 4
 ────────────────────────── */
 
 #linea4 {
+    display: flex;
     width: 100%;
     height: 70vh;
     margin-top: 30vh;
-    padding: 0 0 2% 2%;
+    flex-direction: column;
 }
 
 #elemento13 {
@@ -324,6 +329,7 @@ body {
     margin-bottom: 1vh;
     font-size: 4rem;
 }
+
 #elemento14 {
     width: 80%;
     height: 1.5vh;
@@ -331,14 +337,19 @@ body {
     margin-bottom: 1vh;
     font-size: 1.5rem;
 }
+
+#cajas3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #caja1,
 #caja2,
 #caja3 {
-    float: left;
     width: 31.32%;
     height: 60vh;
     margin-top: 5vh;
-    margin-right: 2%;
 }
 
 /* Parte de arriba y parte de abajo internas */
@@ -356,9 +367,11 @@ body {
 }
 
 .l1 {
+    display: flex;
     width: 95%;
     height: 1.5vh;
     margin: 1vh;
+    justify-content: space-between;
 }
 
 .l2 {
@@ -377,10 +390,6 @@ body {
     color: var(--principal);
 }
 
-.tipo{
-    float: right;
-}
-
 
 
 /* ──────────────────────────
@@ -388,160 +397,171 @@ body {
 ────────────────────────── */
 
 #linea5 {
+    display: flex;
     width: 100%;
     height: 30vh;
     margin-top: 15vh;
     color: var(--tercero);
+    justify-content: center;
+    align-items: center;
 }
 
 #caja4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     height: 30vh;
-    margin: auto;
-    padding-top: 1vh;
     background-color: var(--principal);
     border-radius: 25px;
 }
 
 #subcaja1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
-    height: 15vh;
-    margin: auto;
-    margin-top: 3.5vh;
+    height: auto;
 }
 
-#elemento24{
+#elemento24 {
     width: 100%;
-    height: 4vh;    
-    margin: auto;
-    margin-top: 1vh;
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 2vh;
 }
-#elemento25{
+
+#elemento25 {
     width: 100%;
-    height: 2vh;
-    margin: auto;
-    margin-top: 5vh;
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4vh;
 }
-#elemento26{
+
+#elemento26 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     width: 100%;
     height: 7vh;
-    margin: auto;
-    margin-top: 5vh;
-    padding-top: 1.55vh;
-    padding-left: 3%;
-    text-align: left;
     background-color: var(--tercero);
     color: #d4d4d4;
-    font-size: 1.5rem;
     border-radius: 15px;
+    padding: 0 3%;
+    font-size: 1.5rem;
 }
 
-#correo{
-    float: left;
-    padding-top: 0.7vh;
+#correo {
+    display: flex;
+    align-items: center;
 }
 
-#abrir{
-    float: right;
+#abrir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 40%;
     height: 4vh;
-    margin-right: 5%;
-    padding-top: 0.7vh;
-    text-align: center;
-    border-radius: 15px;
+
     background-color: var(--principal);
     color: var(--tercero);
-
+    border-radius: 15px;
 }
+
 
 /* ──────────────────────────
    LINEA 6
 ────────────────────────── */
 
 #linea6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 30vh;
-    padding: 2%;
     margin-top: 5vh;
 }
 
-#precaja1{
-    margin: auto;
+#precaja1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    height: 100%;
 }
 
-#caja5, #caja6, #caja7 {
-    float: left;
-    width: 20%;
-    height: 23vh;
+#caja5,
+#caja6,
+#caja7,
+#caja8 {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
     margin-right: 5%;
 }
 
 #caja8 {
-    float: left;
-    width: 25%;
-    height: 23vh;
+    margin-right: 0;
 }
 
-.th, .thf{
+.th,
+.thf {
     font-weight: bold;
     font-size: 1.5rem;
+    margin-bottom: 1vh;
 }
 
-.th, .td{
-    width: 94%;
-    height: 4.5vh;
-    margin: 3%;
+.td,
+.tdf {
+    font-size: 1.2rem;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
 }
 
-.thf, .tdf{
-    width: 97.02%;
-    height: 4.5vh;
-    margin-top: 2.05%;
-}
 
 /* ──────────────────────────
    LINEA 7
 ────────────────────────── */
 
 #linea7 {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 15vh;
     padding: 2vh 0 0 2vh;
 }
 
 #elemento42 {
-    float: left;
-    width: 98%;
+    width: 100%;
     height: 5px;
-    margin-right: 3%;
     background-color: var(--secundario);
     border-radius: 100px;
 }
 
 #caja9 {
-    float: left;
-    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
     height: 9vh;
+
     margin-top: 2vh;
 }
 
 #elemento43 {
-    float: left;
-    width: 40%;
-    height: 4vh;
-    margin: 2.5vh 0 1vh 1vh;
+    font-size: 1.2rem;
 }
 
 #elemento44 {
-    float: right;
-    width: 30%;
-    height: 4vh;
-    margin: 2.5vh 1vh 1vh 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
 }
-#aviso{
-    float: right;
+
+#aviso {
+    font-weight: bold;
 }
