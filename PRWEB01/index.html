@@ -22,24 +22,24 @@
 </head>
 <body>
 
-    <header class="header">
+    <header id="encabezado" class="header">
         <img src="img/logo-interred-c03.svg" alt="InterRed Servicios de Red">
     </header>
 
     <nav class="nav">
         <ul class="menu">
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#">NOSOTROS</a></li>
-            <li><a href="#">SERVICIOS</a></li>
+            <li><a class="este" href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
             <li><a href="#">WEBS</a></li>
-            <li><a href="#">CONTACTO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
 
     <div id="intro">
         <h2>Servicios de Red e Internet</h2>
         <p>Somos profesionales de los sistemas de información.</p>
-        <a id="botonIntro" href="">Ponte en contacto</a>
+        <a id="botonIntro" href="contacto.html">Ponte en contacto</a>
     </div>
 
     <div id="info">
@@ -57,29 +57,35 @@
 
         <div id="serviciosImg">
             <div class="serviciosImg">
-                <img src="img/server-solid-full.svg">
-                <p>Administración de Sistemas</p>
-            </div>
-            <div class="serviciosImg">
-                <img src="img/cloud-solid-full.svg">
-                <p>Gestión en la nube</p>
-            </div>
-            <div class="serviciosImg">
-                <img src="img/database-solid-full.svg">
-                <p>Análisis Funcional y Orgánico</p>
-            </div>
-            <div class="serviciosImg">
-                <img src="img/chart-line-solid-full.svg">
-                <p>Software empresarial integral</p>
-            </div>
-            <div class="serviciosImg">
-                <img src="img/html5-brands-solid-full.svg">
-                <p>Diseño web personalizado</p>
-            </div>
-            <div class="serviciosImg">
-                <img src="img/cart-shopping-solid-full.svg">
-                <p>Introducción en Internet</p>
-            </div>
+            <i class="fa-solid fa-server"></i>
+            <p>Administración de Sistemas</p>
+        </div>
+
+        <div class="serviciosImg">
+            <i class="fa-solid fa-cloud"></i>
+            <p>Gestión en la nube</p>
+        </div>
+
+        <div class="serviciosImg">
+            <i class="fa-solid fa-database"></i>
+            <p>Análisis Funcional y Orgánico</p>
+        </div>
+
+        <div class="serviciosImg">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Software empresarial integral</p>
+        </div>
+
+        <div class="serviciosImg">
+            <i class="fa-brands fa-html5"></i>
+            <p>Diseño web personalizado</p>
+        </div>
+
+        <div class="serviciosImg">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Introducción en Internet</p>
+        </div>
+
         </div>
     </div>
 
@@ -207,6 +213,10 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+
+    <a href="#encabezado" class="botonArriba">
+        <i class="fa-solid fa-circle-up"></i>
+    </a>
 
 </body>
 </html>

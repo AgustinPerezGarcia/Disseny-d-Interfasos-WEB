@@ -14,277 +14,303 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--fuente-principal);
-    color: var(--color-texto-principal);
-    background-color: var(--color-fondo-principal);
-    overflow-x: hidden;
-}
+@media screen and (max-width: 749px) {
 
-/* ================= HEADER ================= */
-.header {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 1vh 2%;
-}
+    body {
+        font-family: var(--fuente-principal);
+        color: var(--color-texto-principal);
+        background-color: var(--color-fondo-principal);
+        overflow-x: hidden;
+    }
 
-.header img {
-    width: 10rem;
-    max-width: 80%;
-}
+    /* ================= HEADER ================= */
+    .header {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1vh 2%;
+    }
 
-/* ================= NAV ================= */
-.nav {
-    background-color: var(--color-fondo-primario);
-}
+    .header img {
+        width: 10rem;
+        max-width: 80%;
+    }
 
-.menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
+    /* ================= NAV ================= */
+    .nav {
+        background-color: var(--color-fondo-primario);
+    }
 
-.menu li{
-    border-top: 0.15rem var(--color-primario) solid;
-}
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
 
-.menu a {
-    display: block;
-    text-align: center;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    color: var(--color-primario);
-    font-weight: 1000;
-    font-size: 1.5rem;
-}
+    .menu li {
+        border-top: 0.15rem var(--color-primario) solid;
+    }
 
-/* ================= INTRO  ================= */
-#intro {
-    background-image: url("../img/fondo-interred-p.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: var(--color-primario);
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
 
-    height: 60vh;
+    .menu .este{
+        color: var(--color-secundario);
+    }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* ================= INTRO  ================= */
+    #intro {
+        background-image: url("../img/fondo-interred-p.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
 
-    text-align: center;
-    color: white;
-    padding: 2.5rem 1.25rem;
+        height: 60vh;
 
-    position: relative;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+        padding: 2.5rem 1.25rem;
+
+        position: relative;
+    }
 
 
-#intro * {
-    position: relative;
-}
+    #intro * {
+        position: relative;
+    }
 
-#intro h2 {
-    font-size: 2rem;
-    margin-bottom: 0.625rem;
-}
+    #intro h2 {
+        font-size: 2rem;
+        margin-bottom: 0.625rem;
+    }
 
-#intro p {
-    font-size: 1.2rem;
-}
+    #intro p {
+        font-size: 1.2rem;
+    }
 
-#botonIntro {
-    margin-top: 1rem;
-    padding: 0.625rem 1.375rem;
-    background-color: var(--color-secundario);
-    color: var(--color-texto-secundario);
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 0.3125rem;
-}
+    #botonIntro {
+        margin-top: 1rem;
+        padding: 0.625rem 1.375rem;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.3125rem;
+    }
 
-/* ================= INFO ================= */
-#info {
-    padding: 1.5rem 1.25rem;
-    background-color: var(--color-secundario);
-}
+    /* ================= INFO ================= */
+    #info {
+        padding: 1.5rem 1.25rem;
+        background-color: var(--color-secundario);
+    }
 
-#info h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    #info h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
         text-align: center;
 
-    color: var(--color-texto-secundario);
+        color: var(--color-texto-secundario);
+    }
+
+    #info p {
+        color: var(--color-texto-secundario);
+        margin-bottom: 3vh;
+    }
+
+    #info img {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    /* ================= SERVICIOS ================= */
+    #servicios {
+        padding: 1.5rem 1.25rem;
+    }
+
+    #tituloServicio h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    #serviciosImg {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .serviciosImg {
+        background-color: var(--color-fondo-principal);
+        padding: 1.25rem;
+        border-radius: 0.625rem;
+        text-align: center;
+
+        margin-top: 2vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: relative;
+    }
+
+    /* círculo azul */
+    .serviciosImg::before {
+        content: "";
+        width: 15rem;
+        height: 15rem;
+        background-color: var(--color-secundario);
+        border-radius: 50%;
+        display: block;
+        margin-bottom: 0.75rem;
+    }
+
+    /* icono */
+    .serviciosImg i {
+        font-size: 7.5rem;
+        color: var(--color-fondo-principal);
+        position: absolute;
+        top: 5rem;
+    }
+
+
+    .serviciosImg p {
+        font-size: 2rem;
+        margin-top: 1vh;
+        font-weight: 700;
+    }
+
+    #solicitud {
+        color: var(--color-secundario);
+    }
+
+    /* ================= ESPECIALIDADES ================= */
+    #especialidades {
+        background-image: url("../img/fondo-servicios-p.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        padding: 2.5rem 1.25rem;
+        position: relative;
+    }
+
+    #especialidades h2 {
+        font-size: 1.6rem;
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .especialidad {
+        margin-top: 5vh;
+    }
+
+    .especialidad h3 {
+        font-size: 1.4rem;
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .especialidad p {
+        font-size: 1rem;
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+    }
+
+    .especialidad img {
+        width: 70%;
+        margin: 0 auto 0.625rem;
+        display: block;
+    }
+
+    .botonEspe {
+        display: block;
+        margin: 1rem auto 0;
+        padding: 0.625rem 1.375rem;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.3125rem;
+        text-align: center;
+        width: fit-content;
+    }
+
+
+    /* ================= PROYECTOS ================= */
+
+    #proyectos h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    #proyectos p {
+        text-align: center;
+        margin-bottom: 1vh;
+        color: var(--color-texto-principal);
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .proyecto {
+        margin-bottom: 1.25rem;
+    }
+
+    .proyectoImg img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 0.625rem;
+        border: 0.125rem solid var(--color-texto-principal);
+    }
+
+
+    /* ================= FOOTER ================= */
+    .footer {
+        background-color: var(--color-texto-principal);
+        color: var(--color-texto-secundario);
+        text-align: center;
+        font-size: 0.9rem;
+        height: 10vh;
+        padding-top: 2vh;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 0.4rem;
+    }
+
+    .redes a {
+        color: var(--color-fondo-principal);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+
+    /* ================= Boton arriba ================= */
+
+    .botonArriba i{
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+
+        color: var(--color-primario);
+        font-size: 2.5rem;
+
+    }
 }
-
-#info p {
-    color: var(--color-texto-secundario);
-    margin-bottom: 3vh;
-}
-
-#info img {
-    width: 100%;
-    margin-top: 1rem;
-}
-
-/* ================= SERVICIOS ================= */
-#servicios {
-    padding: 1.5rem 1.25rem;
-}
-
-#tituloServicio h2{
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-
-#serviciosImg {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.serviciosImg {
-    background-color: white;
-    padding: 1.25rem;
-    border-radius: 0.625rem;
-    text-align: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* círculo azul */
-.serviciosImg::before {
-    content: "";
-    width: 90%;
-    height: 40vh;
-    background-color: var(--color-secundario);
-    border-radius: 50%;
-    display: block;
-}
-
-/* icono */
-.serviciosImg img {
-    width: 70%;
-    margin-top: -36vh;
-    filter: brightness(0) invert(1);
-}
-
-.serviciosImg p{
-    font-size: 2rem;
-    margin-top: 10vh;
-    font-weight: 700;
-}
-
-#solicitud{
-    color: var(--color-secundario);
-}
-
-/* ================= ESPECIALIDADES ================= */
-#especialidades {
-    background-image: url("../img/fondo-servicios-p.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    padding: 2.5rem 1.25rem;
-    position: relative;
-}
-
-#especialidades h2 {
-    font-size: 1.6rem;
-    color: var(--color-primario);
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.especialidad{
-    margin-top: 5vh;
-}
-
-.especialidad h3 {
-    font-size: 1.4rem;
-    color: var(--color-primario);
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.especialidad p {
-    font-size: 1rem;
-    color: var(--color-primario);
-    margin-bottom: 1rem;
-}
-
-.especialidad img {
-    width: 70%;
-    margin: 0 auto 0.625rem;
-    display: block;
-}
-
-.botonEspe {
-    display: block;
-    margin: 1rem auto 0;
-    padding: 0.625rem 1.375rem;
-    background-color: var(--color-secundario);
-    color: var(--color-texto-secundario);
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 0.3125rem;
-    text-align: center;
-    width: fit-content;
-}
-
-
-
-
-/* ================= PROYECTOS ================= */
-
-
-#proyectos h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1.25rem;
-}
-
-#proyectos p {
-    text-align: center;
-    margin-bottom: 1vh;
-    color: var(--color-texto-principal);
-    font-weight: 900;
-    font-size: 1.5rem;
-}
-
-.proyecto {
-    margin-bottom: 1.25rem;
-}
-
-.proyectoImg img {
-    width: 100%;
-    border-radius: 0.625rem;
-}
-
-/* ================= FOOTER ================= */
-.footer {
-    background-color: var(--color-texto-principal);
-    color: var(--color-texto-secundario);
-    text-align: center;
-    font-size: 0.9rem;
-    height: 10vh;
-    padding-top: 2vh;
-}
-
-.redes {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1rem;
-}
-
-.redes a {
-    color: white;
-    font-size: 1.4rem;
-    text-decoration: none;
-}
-
