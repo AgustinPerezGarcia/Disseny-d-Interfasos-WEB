@@ -1,0 +1,18 @@
+
+
+@media screen and (max-width: 749px) {
+
+    #area{
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+    }
+
+    .areas{
+        display: flex;
+        width: 85%;
+        margin: auto;
+        
+        justify-content: space-between;
+    }
+
+}
