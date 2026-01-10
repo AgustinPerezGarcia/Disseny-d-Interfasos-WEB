@@ -5,14 +5,41 @@
     #area{
         background-color: var(--color-secundario);
         color: var(--color-texto-secundario);
+        padding-bottom: 3vh;
     }
 
     .areas{
         display: flex;
-        width: 85%;
+        width: 75%;
+        align-items: center;
+        flex-direction: column;
         margin: auto;
-        
-        justify-content: space-between;
+    }
+
+    .areas div{
+        padding-bottom: 2vh;
+    }
+    
+    .areas h2{
+        text-align: center;
+    }
+
+    .areas h2 + p{
+        margin-top: 3vh;
+    }
+
+    .areas div div{
+        margin-top: 2vh;
+        background-color: var(--color-fondo-principal);
+        color: var(--color-texto-principal);
+        border: 1px solid var(--color-texto-principal);
+        border-radius: 5px;
+        padding: 1vh 5% 2vh 5%;
+    }
+
+    .areas div div p{
+        margin-top: 1vh;
+        font-size: 0.8rem;
     }
 
 }

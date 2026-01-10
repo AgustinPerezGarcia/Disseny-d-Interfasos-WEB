@@ -1,0 +1,24 @@
+#construccion{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#construccion i{
+    font-size: 10rem;
+    color: var(--color-secundario);
+}
+
+#construccion h2{
+    margin-top: 7vh;
+    color: var(--color-primario);
+    font-size: 1.7rem;
+}
+
+#construccion p{
+    color: var(--color-primario);
+    text-align: center;
+}
+
