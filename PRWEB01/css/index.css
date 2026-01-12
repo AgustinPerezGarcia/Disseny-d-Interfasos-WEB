@@ -25,21 +25,22 @@
 
     /* ================= SERVICIOS ================= */
     #servicios {
-        padding: 5vh 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vh 0;
     }
 
     #tituloServicio {
-        text-align: center;
+        width: 90%;
         margin-bottom: 2rem;
+        margin-left: 5%;
     }
 
     #tituloServicio h2 {
+        text-align: center;
         font-weight: 700;
         color: var(--color-texto-principal);
-    }
-
-    #solicitud {
-        color: var(--color-secundario);
     }
 
     #tituloServicio p {
@@ -47,17 +48,31 @@
         margin-top: 1.5vh;
     }
 
-    #serviciosImg {
-        display: flex;
+    #solicitud {
+        color: var(--color-secundario);
+    }
 
+    #serviciosImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         gap: 2rem 1.5rem;
     }
 
-    .serviciosImg {
+    #primero .serviciosImg {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
         margin-top: 4vh;
+        gap: 1.5rem;
+    }
+
+    #segundo .serviciosImg {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 4vh;
+        gap: 1.5rem;
     }
 
 
@@ -65,7 +80,13 @@
         flex-direction: row-reverse;
     }
 
-    
+    #primero p {
+        text-align: right;
+    }
+
+    #segundo p {
+        text-align: left;
+    }
 
     .serviciosImg i {
         width: 120px;
@@ -82,17 +103,111 @@
         font-size: 3rem;
 
         line-height: 1;
+
+        flex-shrink: 0;
     }
 
     .serviciosImg i::before {
-        width: 1em;
         text-align: center;
     }
 
 
     .serviciosImg p {
+        font-size: 1.4rem;
         color: var(--color-texto-principal);
         font-weight: 600;
+    }
+
+    /* ================= ESPECIALIDADES ================= */
+    #especialidades {
+        background-image: url("../img/fondo-servicios-p.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        padding: 2.5rem 5%;
+        position: relative;
+    }
+
+    #especialidades h2 {
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .especialidad {
+        margin-top: 5vh;
+    }
+
+    .especialidad h3 {
+        font-size: 2.5rem;
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .especialidad p {
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+    }
+
+    .especialidad img {
+        width: 70%;
+        margin: 0 auto 0.625rem;
+        display: block;
+    }
+
+    .botonEspe {
+        display: block;
+        margin: 1rem auto 0 auto;
+        padding: 1.5vh 5%;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.3125rem;
+        text-align: center;
+        width: fit-content;
+    }
+
+   /* ================= PROYECTOS ================= */
+
+    #proyectos h2 {
+        text-align: center;
+        margin: 2vh 0 2vh 0;
+    }
+
+    #proyectos p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1vh;
+        color: var(--color-texto-principal);
+        font-weight: 900;
+    }
+
+    #contProyecto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .proyecto {
+        width: 35%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .proyectoImg {
+        border-radius: 0.75rem;
+    }
+
+    .proyectoImg img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 0.625rem;
+        border: 0.125rem solid var(--color-texto-principal);
     }
 
 }
