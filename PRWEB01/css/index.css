@@ -1,3 +1,243 @@
+@media screen and (min-width: 1250px) {
+
+    /* ================= INFO ================= */
+    #info {
+        padding: 3vh 15%;
+        background-color: var(--color-secundario);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+        padding: 0 2%;
+        color: var(--color-texto-secundario);
+    }
+
+    #info p {
+        color: var(--color-texto-secundario);
+        margin-bottom: 3vh;
+    }
+
+    #info img {
+        width: 40%;
+        margin-top: 1rem;
+        margin: auto;
+    }
+
+    /* ================= SERVICIOS ================= */
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0;
+    }
+
+    /* ---------- TÍTULO ---------- */
+
+    #tituloServicio {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #tituloServicio h2 {
+        font-weight: 700;
+        color: var(--color-texto-principal);
+    }
+
+    #tituloServicio p {
+        margin-top: 1.5vh;
+    }
+
+    #solicitud {
+        color: var(--color-secundario);
+    }
+
+    /* ---------- CONTENEDOR PRINCIPAL ---------- */
+
+    #serviciosImg {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    /* columnas izquierda y derecha */
+    #primero,
+    #segundo {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* imagen central  */
+    #serviciosImg>img {
+        width: 30%;
+        max-width: 350px;
+    }
+
+    /* ---------- CADA SERVICIO ---------- */
+
+    .serviciosImg {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 3vh;
+    }
+
+    /* iconos a la derecha en la columna izquierda */
+    #primero .serviciosImg {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    /* textos */
+    .serviciosImg p {
+        font-size: 1.4rem;
+        color: var(--color-texto-principal);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /* descripción (segunda línea) */
+    .serviciosImg p.invisible {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0.5vh;
+    }
+
+    /* ---------- ICONOS ---------- */
+
+    .serviciosImg i {
+        width: 80px;
+        height: 80px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--color-secundario);
+        color: white;
+
+        border-radius: 50%;
+        font-size: 2.4rem;
+
+        line-height: 1;
+        flex-shrink: 0;
+    }
+
+    .nInvisible {
+        display: none;
+    }
+
+    /* ================= ESPECIALIDADES ================= */
+    #especialidades {
+        background-image: url("../img/fondo-servicios-p.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        padding: 2.5rem 5%;
+        position: relative;
+    }
+
+    #especialidades h2 {
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    #especialidades div {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    .especialidad {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidad h3 {
+        font-size: 2rem;
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .especialidad p {
+        color: var(--color-primario);
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .especialidad img {
+        width: 70%;
+        margin: 0 auto 0.625rem;
+        display: block;
+    }
+
+    .botonEspe {
+        display: block;
+        margin: 1rem auto 0 auto;
+        padding: 1.5vh 5%;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.3125rem;
+        text-align: center;
+        width: fit-content;
+    }
+
+    /* ================= PROYECTOS ================= */
+
+    #proyectos h2 {
+        text-align: center;
+        margin: 2vh 0 2vh 0;
+    }
+
+    #proyectos p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1vh;
+        color: var(--color-texto-principal);
+        font-weight: 900;
+    }
+
+    #contProyecto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .proyecto {
+        width: 20%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .proyectoImg {
+        border-radius: 0.75rem;
+    }
+
+    .proyectoImg img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 0.625rem;
+        border: 0.125rem solid var(--color-texto-principal);
+    }
+
+}
+
 @media screen and (min-width: 750px) and (max-width: 1249px) {
 
     /* ================= INFO ================= */
@@ -118,6 +358,10 @@
         font-weight: 600;
     }
 
+    .invisible {
+        display: none;
+    }
+
     /* ================= ESPECIALIDADES ================= */
     #especialidades {
         background-image: url("../img/fondo-servicios-p.jpg");
@@ -170,7 +414,7 @@
         width: fit-content;
     }
 
-   /* ================= PROYECTOS ================= */
+    /* ================= PROYECTOS ================= */
 
     #proyectos h2 {
         text-align: center;
@@ -297,6 +541,10 @@
 
     #solicitud {
         color: var(--color-secundario);
+    }
+
+    .invisible {
+        display: none;
     }
 
     /* ================= ESPECIALIDADES ================= */
