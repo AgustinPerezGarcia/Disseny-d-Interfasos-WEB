@@ -1,0 +1,432 @@
+:root {
+    --color-primario: #003A7F;
+    --color-secundario: #0094E9;
+    --color-texto-principal: #000;
+    --color-texto-secundario: #FFF;
+    --color-fondo-principal: #FFF;
+    --fuente-principal: 'Quicksand', sans-serif;
+}
+
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo-principal);
+}
+
+@media screen and (min-width: 1250px){
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.65rem;
+    }
+
+    #barra{
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+        width: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1vh 2%;
+    }
+
+    .header img {
+        width: 60%;
+    }
+
+
+    /* ================= NAV ================= */
+    .nav {
+        width: 40%;
+        display: flex;
+        background-color: var(--color-fondo-primario);
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: var(--color-primario);
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
+
+    .menu .este{
+        color: var(--color-secundario);
+    }
+
+        /* ================= INTRO  ================= */
+    #intro {
+        background-image: url("../img/fondo-interred-g.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        height: 90vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+        padding: 10% 15%;
+
+        position: relative;
+    }
+
+    #intro * {
+        position: relative;
+    }
+
+    #intro h2 {
+        margin-bottom: 0.625rem;
+    }
+
+    #intro p{
+        margin-top: 2vh;
+    }
+
+    #botonIntro {
+        width: 25rem;
+        margin-top: 4vh;
+        padding: 0.625rem 1.375rem;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        border-radius: 0.3125rem;
+        font-size: 1.5rem;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+        background-color: var(--color-texto-principal);
+        color: var(--color-texto-secundario);
+        text-align: center;
+        font-size: 0.9rem;
+        height: 10vh;
+        padding-top: 2vh;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 0.4rem;
+    }
+
+    .redes a {
+        color: var(--color-fondo-principal);
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    /* ================= Boton arriba ================= */
+
+    .botonArriba i{
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+
+        color: var(--color-primario);
+        font-size: 5rem;
+
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1249px) {
+    h2{
+        font-size: 3.5rem;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+    #barra{
+        display: flex;
+        justify-content: start;
+        height: 10vh;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+        width: 20%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1vh 2%;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+
+    /* ================= NAV ================= */
+    .nav {
+        width: 80%;
+        display: flex;
+        background-color: var(--color-fondo-primario);
+        align-items: center;
+    }
+
+    .menu {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: var(--color-primario);
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
+
+    .menu .este{
+        color: var(--color-secundario);
+    }
+
+
+        /* ================= INTRO  ================= */
+    #intro {
+        background-image: url("../img/fondo-interred-m.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        height: 90vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+        padding: 10% 15%;
+
+        position: relative;
+    }
+
+    #intro * {
+        position: relative;
+    }
+
+    #intro h2 {
+        margin-bottom: 0.625rem;
+    }
+
+    #intro p{
+        margin-top: 2vh;
+    }
+
+    #botonIntro {
+        width: 20rem;
+        margin-top: 4vh;
+        padding: 0.625rem 1.375rem;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        border-radius: 0.3125rem;
+        font-size: 2rem;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+        background-color: var(--color-texto-principal);
+        color: var(--color-texto-secundario);
+        text-align: center;
+        font-size: 0.9rem;
+        height: 10vh;
+        padding-top: 2vh;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 0.4rem;
+    }
+
+    .redes a {
+        color: var(--color-fondo-principal);
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    /* ================= Boton arriba ================= */
+
+    .botonArriba i{
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+
+        color: var(--color-primario);
+        font-size: 5rem;
+
+    }
+}
+
+
+@media screen and (max-width: 749px) {
+
+    body {
+        color: var(--color-texto-principal);
+        overflow-x: hidden;
+    }
+
+    /* ================= HEADER ================= */
+    .header {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1vh 2%;
+    }
+
+    .header img {
+        width: 10rem;
+        max-width: 80%;
+    }
+
+    /* ================= NAV ================= */
+    .nav {
+        background-color: var(--color-fondo-primario);
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 0.15rem var(--color-primario) solid;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: var(--color-primario);
+        font-weight: 1000;
+        font-size: 1.5rem;
+    }
+
+    .menu .este{
+        color: var(--color-secundario);
+    }
+
+    /* ================= INTRO  ================= */
+    #intro {
+        background-image: url("../img/fondo-interred-p.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        color: white;
+        padding: 2.5rem 1.25rem;
+
+        position: relative;
+    }
+
+
+    #intro * {
+        position: relative;
+    }
+
+    #intro h2 {
+        font-size: 2rem;
+        margin-bottom: 0.625rem;
+    }
+
+    #intro p {
+        font-size: 1.2rem;
+    }
+
+    #botonIntro {
+        margin-top: 1rem;
+        padding: 0.625rem 1.375rem;
+        background-color: var(--color-secundario);
+        color: var(--color-texto-secundario);
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 0.3125rem;
+    }
+
+    /* ================= FOOTER ================= */
+    .footer {
+        background-color: var(--color-texto-principal);
+        color: var(--color-texto-secundario);
+        text-align: center;
+        font-size: 0.9rem;
+        height: 10vh;
+        padding-top: 2vh;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 0.4rem;
+    }
+
+    .redes a {
+        color: var(--color-fondo-principal);
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+
+    /* ================= Boton arriba ================= */
+
+    .botonArriba i{
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+
+        color: var(--color-primario);
+        font-size: 2.5rem;
+
+    }
+}
