@@ -1,0 +1,6 @@
+mp3 54Kb
+Ogg 50Kb
+wav 292Kb
+
+El WAV no esta comprimido por lo que ocupa más, y el MP3 y OGG si que están comprimidos por lo que ocupan menos.
+El archivo AUP3 es un proyecto de Audacity por lo que tiene toda la información de edición.
